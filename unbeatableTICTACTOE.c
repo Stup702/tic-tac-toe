@@ -189,6 +189,18 @@ int main()
 					cells[checkwinmv(human)]=compu;
 					
 				}
+				
+				
+				else if(l==1 && cells[4]==c){
+					if(userin==0 ||userin==2 || userin== 6 ||userin==8 ){
+						
+						cells[4]=compu;
+						alreadytaken[arrin]=4;
+						arrin++;
+						l++;
+						
+					}
+				}
 				else if(theoneandonly(human)!=69){
 					alreadytaken[arrin++]=theoneandonly(human);
 					cells[theoneandonly(human)]=compu;
@@ -203,16 +215,6 @@ int main()
 							break;
 							
 						}
-					}
-				}
-				else if(l==1 && cells[4]==c){
-					if(userin==0 ||userin==2 || userin== 6 ||userin==8 ){
-						
-						cells[4]=compu;
-						alreadytaken[arrin]=4;
-						arrin++;
-						l++;
-						
 					}
 				}
 				
@@ -535,11 +537,3 @@ int main()
 				}
 			}
 		}
-
-
-
-
-
-
-
-
