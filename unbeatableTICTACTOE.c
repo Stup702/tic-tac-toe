@@ -51,7 +51,7 @@ int draw();//check if its a draw
 
 int getthecorners(char player);//getting the corners first to win
 
-int theoneandonly(char player);
+int theoneandonly(char player);//To foil the only possible winning moves
 
 
 int main()
@@ -167,7 +167,8 @@ int main()
                 printf("you win\n");
                 t=1;
                 goto gg;
-            } else if(draw()==1) {
+            } 
+            else if(draw()==1) {
                 printf("It's a draw\n");
                 t=1;
                 goto gg;
@@ -248,28 +249,27 @@ int main()
 
 
             }
-gg:
+		}
+		gg:
+		if(t==1) {
+			printf("Are you unsatisfied?\nWanna have another go?(y or n)\n\n");
+			while(1) {
+				scanf(" %c",&go);
+				if(go=='y') {
+					newl newl newl newl newl newl newl newl newl newl newl
+					break;
+				} else if(go=='n') {
+					return 0;
+				} else {
+					printf("Wrong response. Please try again\n");
+				}
+			}
+			t=0;
+		}
 
 
 
-            if(t==1) {
-                printf("Are you unsatisfied?\nWanna have another go?(y or n)\n\n");
-                while(1) {
-                    scanf(" %c",&go);
-                    if(go=='y') {
-                        newl newl newl newl newl newl newl newl newl newl newl
-                        break;
-                    } else if(go=='n') {
-                        return 0;
-                    } else {
-                        printf("Wrong response. Please try again\n");
-                    }
-                }
-            }
-
-
-
-        }
+        
 
     }
 }
