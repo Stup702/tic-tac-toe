@@ -256,7 +256,7 @@ int main()
 			while(1) {
 				scanf(" %c",&go);
 				if(go=='y') {
-					newl newl newl newl newl newl newl newl newl newl newl
+					
 					break;
 				} else if(go=='n') {
 					return 0;
