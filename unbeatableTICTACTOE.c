@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
+ * MA 02110-1301, USA. 
  *
  *
  */
@@ -56,7 +56,10 @@ int theoneandonly(char player);//To foil the only possible winning moves
 
 int main()
 {
-
+    system("clear");
+    printf("         WELCOME TO ANIMESH'S CHALLENGE\n\n");
+    printf("You win only when you win. If it's a draw, you lose\n\n");
+    printf("!!!While playing only input single numbers\n\n");
     while(1) {
         getcrncnt=0;
 
@@ -169,7 +172,7 @@ int main()
                 goto gg;
             } 
             else if(draw()==1) {
-                printf("It's a draw\n");
+                printf("It's a draw. So, you lose.\n");
                 t=1;
                 goto gg;
             }
@@ -238,12 +241,12 @@ int main()
             gui();
 
             if(gamecnt()!=1) {
-                printf("compu wins");
+                printf("compu wins\n");
                 t=1;
                 goto gg;
 
             } else if(draw()==1) {
-                printf("It's a draw");
+                printf("It's a draw. So, you lose\n");
                 t=1;
                 goto gg;
 
@@ -324,6 +327,7 @@ int randomnumber()
 
 int gui(void)
 {
+    system("clear");
     printf("       0    1    2  \n");
     printf("    ----------------\n");
     printf("  0 | %c  | %c  | %c  | 2 \n", cells[0],cells[1], cells[2]);
