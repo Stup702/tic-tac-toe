@@ -22,11 +22,11 @@
  */
 
 #ifdef _WIN32
-#define clr "cls"
+    #define clr "cls"
 #endif
 
 #ifdef __linux__
-#define clr "clear"
+    #define clr "clear"
 #endif
 
 #include <stdio.h>
@@ -42,7 +42,9 @@ int getcrncnt = 0;
 
 int edge[4] = {1, 3, 5, 7};
 
-char human, compu, cells[9] = {'.', '.', '.', '.', '.', '.', '.', '.', '.'}; // const expressions somehow doesnt work in mingw.Well whatever
+char human, compu, cells[9] = { '.', '.', '.',
+                                '.', '.', '.', 
+                                '.', '.', '.'}; // const expressions somehow doesnt work in mingw.Well whatever
 
 int gui(void); // graphical interface
 
