@@ -32,11 +32,11 @@ const char c='.';
 
 
 #ifdef _WIN32
-    #define clear "cls"
+    #define clr "cls"
 #endif
 
 #ifdef __linux__
-    #define clear "clear"
+    #define clr "clear"
 #endif
 int getcrncnt=0;
 
@@ -66,7 +66,7 @@ int theoneandonly(char player);//To foil the only possible winning moves
 
 int main()
 {
-    system(clear);
+    system(clr);
     printf("         WELCOME TO ANIMESH'S CHALLENGE\n\n");
     printf("You win only when you win. If it's a draw, you lose\n\n");
     printf("!!!While playing only input single numbers\n\n");
