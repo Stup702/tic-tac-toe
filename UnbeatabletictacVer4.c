@@ -337,7 +337,7 @@ int randomnumber()
 
 int gui(void)
 {
-    system("clear");
+    system(clr);
     printf("       0    1    2  \n");
     printf("    ----------------\n");
     printf("  0 | %c  | %c  | %c  | 2 \n", cells[0],cells[1], cells[2]);
